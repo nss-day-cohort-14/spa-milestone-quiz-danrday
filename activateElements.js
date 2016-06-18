@@ -8,12 +8,21 @@ var Carlot = (function (carlot) {
     };
   };
 
+
   carlot.clickHandler = function() {
+
+    carlot.resetCSS(lastCardSelected);
+
+    lastCardSelected = event.target.closest("div").id;
+
+    var cardSelected = event.target.closest("div").id;
+
+    carlot.modifyCSS(cardSelected)
 
     textBox.value = ""; //resets the textbox
 
     //finds div the user clicked in, gets its number
-    selectedTargetNum = event.target.closest("div").id.split("--")[1];
+    selectedTargetNum = cardSelected.split("--")[1];
 
     //locate the description section of card content
     var selectedDescriptionID = `description--${selectedTargetNum}`;
@@ -26,9 +35,11 @@ var Carlot = (function (carlot) {
     textBox.addEventListener("keyup", editDescript);
   };
 
+
+  var lastCardSelected;
   //defined these globally so that editDescript() updates DOM immediately
-  var selectedTargetNum;  //number corresponding to array value in JSON file
-  var descriptionSelected; //
+  var selectedTargetNum;  //number corresponding to array value in JSON file, set by clickHandler();
+  var descriptionSelected; //set by clickHandler();
   var textBox = document.getElementById("textInput");
 
   function editDescript(e) {

@@ -3,54 +3,56 @@ var Carlot = (function (carlot) {
 //will hold all JSON info for the cars
 var carArray = [];
 
-//getter for carArray
-carlot.getInventory = function () {
-  return carArray;
-}
-
-//loads the inventory and applies a callback function
+//loads inventory
+//applies callback function to inventory
 carlot.loadInventory = function (callback) {
       var messageLoader = new XMLHttpRequest();
       messageLoader.open("GET", "inventory.json");
       messageLoader.send();
       messageLoader.addEventListener("load", function () {
+      //carAray starts inside .cars directory in JSON
       carArray = JSON.parse(event.target.responseText).cars;
       callback(carArray);
       });
     };
 
-//populates variable contentArea and then prints it once to DOM
+ //getter for carArray
+carlot.getInventory = function () {
+  return carArray;
+}
+
+//populates variable Content and then prints it once to DOM
 carlot.printCards = function() {
   var areaDOMToPrint = document.getElementById("mainDisplay");
 
-  var contentArea = "";
+  var Content = "";
 
   for (var i = 0; i < carArray.length; i++) {
     var currCard = carArray[i];
 
     // creates a new row div, then one for every third card (taken from Swann)
      if ( i % 3 === 0 ) {
-      contentArea += `<div class="row">`
+      Content += `<div class="row">`
      };
 
-     //add card properties and ID
-    contentArea += `<div class="col-sm-3 singleCard" id="carProducts--${i}">`;
+     //add each card's ID
+    Content += `<div class="col-sm-3 singleCard" id="carProducts--${i}">`;
 
     //main card content
-    contentArea += `<p>Make: ${currCard.make}</p><p>Model: ${currCard.model}</p><p>Year: ${currCard.year}</p><p>Price: ${currCard.price}</p><p>Color: ${currCard.color}</p><p>Purchased: ${currCard.purchased}</p><p id="description--${i}">Description: ${currCard.description}</p>`;
+    Content += `<p>Make: ${currCard.make}</p><p>Model: ${currCard.model}</p><p>Year: ${currCard.year}</p><p>Price: ${currCard.price}</p><p>Color: ${currCard.color}</p><p>Purchased: ${currCard.purchased}</p><p id="description--${i}">Description: ${currCard.description}</p>`;
 
     //closing card properties and ID div
-    contentArea += `</div>`
+    Content += `</div>`
 
     // closes row div on every 6th card
      if ( i % 3 === 2 ) {
-       contentArea +=`</div>`;
+       Content +=`</div>`;
       };
 
   };
 
   //ready to print to DOM
-  areaDOMToPrint.innerHTML = contentArea;
+  areaDOMToPrint.innerHTML = Content;
 
   //after printing to DOM, load event listeners
   carlot.activateElements();
