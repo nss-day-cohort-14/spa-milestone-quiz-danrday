@@ -1,0 +1,9 @@
+#mainDisplay {
+  clear:both;
+  padding-top: 30px;
+}
+
+.singleCard {
+  background-color: yellow;
+  border: 2px dotted green;
+}
