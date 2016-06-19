@@ -17,7 +17,7 @@ var Carlot = (function (carlot) {
 
     var cardSelected = event.target.closest("div").id;
 
-    carlot.modifyCSS(cardSelected)
+    carlot.modifyCSS(cardSelected);
 
     textBox.value = ""; //resets the textbox
 
@@ -35,7 +35,7 @@ var Carlot = (function (carlot) {
     textBox.addEventListener("keyup", editDescript);
   };
 
-
+  // var cardSelectedQuerySelector;
   var lastCardSelected;
   //defined these globally so that editDescript() updates DOM immediately
   var selectedTargetNum;  //number corresponding to array value in JSON file, set by clickHandler();
@@ -43,9 +43,8 @@ var Carlot = (function (carlot) {
   var textBox = document.getElementById("textInput");
 
   function editDescript(e) {
-      //if the user presses enter, re-write card's actual array value to whatever the user has typed.
        if (13 == e.keyCode) {
-        carlot.getInventory()[selectedTargetNum].description == textBox.value;
+        // carlot.getInventory()[selectedTargetNum].description == textBox.value;
         textBox.value = "";
     }
       //any key other than "enter" is text output into the description area

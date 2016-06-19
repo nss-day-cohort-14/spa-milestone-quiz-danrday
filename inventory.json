@@ -14,7 +14,34 @@
     "model": "Rogue",
     "year": "2006",
     "price": "8999",
-    "color": "FireBrick",
+    "color": "yellow",
+    "purchased": false,
+    "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
+  },
+  {
+    "make": "Nissan",
+    "model": "Rogue",
+    "year": "2006",
+    "price": "8999",
+    "color": "blue",
+    "purchased": false,
+    "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
+  },
+  {
+    "make": "Nissan",
+    "model": "Rogue",
+    "year": "2006",
+    "price": "8999",
+    "color": "green",
+    "purchased": false,
+    "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
+  },
+  {
+    "make": "Nissan",
+    "model": "Rogue",
+    "year": "2006",
+    "price": "8999",
+    "color": "purple",
     "purchased": false,
     "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
   },
@@ -32,34 +59,7 @@
     "model": "Rogue",
     "year": "2006",
     "price": "8999",
-    "color": "FireBrick",
-    "purchased": false,
-    "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
-  },
-  {
-    "make": "Nissan",
-    "model": "Rogue",
-    "year": "2006",
-    "price": "8999",
-    "color": "FireBrick",
-    "purchased": false,
-    "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
-  },
-  {
-    "make": "Nissan",
-    "model": "Rogue",
-    "year": "2006",
-    "price": "8999",
-    "color": "FireBrick",
-    "purchased": false,
-    "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
-  },
-  {
-    "make": "Nissan",
-    "model": "Rogue",
-    "year": "2006",
-    "price": "8999",
-    "color": "FireBrick",
+    "color": "brown",
     "purchased": false,
     "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
   }]

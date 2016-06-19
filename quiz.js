@@ -54,6 +54,9 @@ carlot.printCards = function() {
   //ready to print to DOM
   areaDOMToPrint.innerHTML = Content;
 
+  //set colors:
+  carlot.loadInitialColors();
+
   //after printing to DOM, load event listeners
   carlot.activateElements();
 
