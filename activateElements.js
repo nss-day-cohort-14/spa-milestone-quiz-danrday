@@ -8,8 +8,11 @@ var Carlot = (function (carlot) {
     };
   };
 
-
   carlot.clickHandler = function() {
+
+    textBox.disabled = '';
+
+    submitButton.disabled = '';
 
     carlot.resetCSS(lastCardSelected);
 
@@ -41,11 +44,24 @@ var Carlot = (function (carlot) {
   var selectedTargetNum;  //number corresponding to array value in JSON file, set by clickHandler();
   var descriptionSelected; //set by clickHandler();
   var textBox = document.getElementById("textInput");
+  var submitButton = document.getElementById("submitButton");
+
+  submitButton.addEventListener("click", function() {
+    console.log("hi");
+    carlot.resetCSS(lastCardSelected);
+    textBox.value = "";
+    textBox.disabled = 'true';
+    submitButton.disabled = 'true';
+  })
 
   function editDescript(e) {
        if (13 == e.keyCode) {
         // carlot.getInventory()[selectedTargetNum].description == textBox.value;
+        carlot.resetCSS(lastCardSelected);
         textBox.value = "";
+        textBox.disabled = 'true';
+        submitButton.disabled = 'true';
+        
     }
       //any key other than "enter" is text output into the description area
       else {descriptionSelected.innerHTML = "Description: " + textBox.value;

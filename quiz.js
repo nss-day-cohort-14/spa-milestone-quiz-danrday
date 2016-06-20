@@ -30,6 +30,14 @@ carlot.printCards = function() {
   for (var i = 0; i < carArray.length; i++) {
     var currCard = carArray[i];
 
+    var availability;
+
+    if (currCard.purchased === false) {
+      availability = "Available!"
+    } else {
+      availability = "Sold!"
+    };
+
     // creates a new row div, then one for every third card (taken from Swann)
      if ( i % 3 === 0 ) {
       Content += `<div class="row">`
@@ -39,7 +47,7 @@ carlot.printCards = function() {
     Content += `<div class="col-sm-3 singleCard" id="carProducts--${i}">`;
 
     //main card content
-    Content += `<p>Make: ${currCard.make}</p><p>Model: ${currCard.model}</p><p>Year: ${currCard.year}</p><p>Price: ${currCard.price}</p><p>Color: ${currCard.color}</p><p>Purchased: ${currCard.purchased}</p><p id="description--${i}">Description: ${currCard.description}</p>`;
+    Content += `<p>Make: ${currCard.make}</p><p>Model: ${currCard.model}</p><p>Year: ${currCard.year}</p><p>Price: ${currCard.price}</p><p>Color: ${currCard.color}</p><p>${availability}</p><p id="description--${i}">Description: ${currCard.description}</p>`;
 
     //closing card properties and ID div
     Content += `</div>`

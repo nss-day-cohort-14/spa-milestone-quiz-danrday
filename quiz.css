@@ -3,12 +3,50 @@
 #mainDisplay {
   clear:both;
   padding-top: 30px;
-
 }
 
 .singleCard {
+  padding-top: 10px;
+  padding-botom: 10px;
   width: 30%;
   margin: 20px;
+  box-shadow: .25em .25em 20px 10px gold;
+  border-radius: 3px;
+  font-weight: bold;
 
+
+}
+
+#textInput {
+  width: 40%;
+  display: inline;
+  border: 2px solid chartreuse;
+  background-color: orange;
+  color: blue;
+
+}
+
+#submitButton {
+  display: inline;
+  border: 3px solid salmon;
+  background-color: lightsalmon;
+  color: mediumvioletred;
+  margin-left: 10px;
+}
+
+nav {
+  background-color: blue;
+  height: 55px;
+  padding-top: 10px;
+  padding-left: 10px;
+  box-shadow: .25em .25em 20px purple;
+}
+
+body {
+  background-color: deeppink;
+}
+
+.row {
+  margin: auto;
 
 }
