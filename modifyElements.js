@@ -12,11 +12,10 @@ var Carlot = (function (carlot) {
   }
  };
 
- carlot.modifyCSS = function (callback) {
-  //callback is the id of selected card
-  var d = document.querySelector(`#${callback}`);
-  var idNum = callback.split("--")[1];
-  var color = carlot.getInventory()[idNum].color;
+ carlot.modifyCSS = function (idCard, color) {
+  var d = document.querySelector(`#${idCard}`);
+  // var idNum = callback.split("--")[1];
+  // var color = carlot.getInventory()[idNum].color;
   d.style.backgroundColor = color;
   d.style.outline = `8px solid purple`;
   d.style.height = ""; //gets rid of the uniformCards() added height to match row

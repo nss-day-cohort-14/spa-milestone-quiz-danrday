@@ -75,7 +75,7 @@ carlot.printCards = function() {
   //set colors:
   carlot.loadInitialColors();
   //after printing to DOM, load event listeners
-  carlot.activateElements();
+  carlot.activateEvents();
 
   carlot.uniformCards();
  

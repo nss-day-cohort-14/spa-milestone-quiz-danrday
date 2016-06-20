@@ -7,7 +7,7 @@ var Carlot = (function (carlot) {
   var textBox = document.getElementById("textInput");
   var submitButton = document.getElementById("submitButton");
 
-  carlot.activateElements = function () {
+  carlot.activateEvents = function () {
     //adds event listeners to all elements at once
     var allCards = document.getElementsByClassName("singleCard");
     for (i = 0; i < allCards.length; i++) {
@@ -22,7 +22,11 @@ var Carlot = (function (carlot) {
     carlot.resetCSS(lastCardSelected); //if a prev card was selected, resets its css
     lastCardSelected = event.target.closest("div").id; //now that css is reset, sets lastCardSelected to new value
     var cardSelected = event.target.closest("div").id;
-    carlot.modifyCSS(cardSelected);
+    // 
+    var idNum = cardSelected.split("--")[1];
+    var color = carlot.getInventory()[idNum].color;
+    // 
+    carlot.modifyCSS(cardSelected, color);
     //finds div the user clicked in, gets its number
     selectedTargetNum = cardSelected.split("--")[1];
     //locate the description section of card content
