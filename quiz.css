@@ -19,7 +19,7 @@
 }
 
 #textInput {
-  width: 40%;
+  width: 200px;
   display: inline;
   border: 2px solid chartreuse;
   background-color: orange;
@@ -43,7 +43,15 @@ body {
   background-color: deeppink;
 }
 
+form {
+  background-color: blue;
+}
+
+.container-fluid {
+  background-color: blue;
+  border: 2px solid yellow;
+}
+
 .row {
   margin: auto;
-
 }
