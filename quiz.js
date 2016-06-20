@@ -6,21 +6,20 @@ var carArray = [];
 //loads inventory
 //applies callback function to inventory
 carlot.loadInventory = function (callback) {
-      var messageLoader = new XMLHttpRequest();
-      messageLoader.open("GET", "inventory.json");
-      messageLoader.send();
-      messageLoader.addEventListener("load", function () {
-      //carAray starts inside .cars directory in JSON
-      carArray = JSON.parse(event.target.responseText).cars;
-      callback(carArray);
-      });
-    };
+  var messageLoader = new XMLHttpRequest();
+  messageLoader.open("GET", "inventory.json");
+  messageLoader.send();
+  messageLoader.addEventListener("load", function () {
+    //carAray starts inside .cars directory in JSON
+    carArray = JSON.parse(event.target.responseText).cars;
+    callback(carArray);
+  });
+};
 
  //getter for carArray
 carlot.getInventory = function () {
   return carArray;
 }
-
 
  carlot.uniformCards = function() {
 
@@ -82,11 +81,8 @@ carlot.printCards = function() {
  
 };
 
-
-
 //loads up the inventory and prints the cards
 carlot.loadInventory(carlot.printCards);
-
 
 return carlot;
 

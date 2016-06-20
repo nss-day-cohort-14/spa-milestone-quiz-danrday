@@ -8,7 +8,7 @@ var Carlot = (function (carlot) {
   var submitButton = document.getElementById("submitButton");
 
   carlot.activateElements = function () {
-    //adds event listeners to everything at once
+    //adds event listeners to all elements at once
     var allCards = document.getElementsByClassName("singleCard");
     for (i = 0; i < allCards.length; i++) {
     allCards[i].addEventListener("click", carlot.clickHandler);
@@ -16,11 +16,11 @@ var Carlot = (function (carlot) {
   };
 
   carlot.clickHandler = function() {
-    textBox.disabled = '';
+    textBox.disabled = ''; //sets disabled to false
     textBox.value = ""; //resets the textbox
-    submitButton.disabled = '';
-    carlot.resetCSS(lastCardSelected);
-    lastCardSelected = event.target.closest("div").id;
+    submitButton.disabled = ''; //sets disabled to false
+    carlot.resetCSS(lastCardSelected); //if a prev card was selected, resets its css
+    lastCardSelected = event.target.closest("div").id; //now that css is reset, sets lastCardSelected to new value
     var cardSelected = event.target.closest("div").id;
     carlot.modifyCSS(cardSelected);
     //finds div the user clicked in, gets its number
@@ -42,17 +42,16 @@ var Carlot = (function (carlot) {
   })
 
   function editDescript(e) {
-       if (13 == e.keyCode) {
-        // carlot.getInventory()[selectedTargetNum].description == textBox.value;
-        carlot.resetCSS(lastCardSelected);
-        textBox.value = "";
-        textBox.disabled = 'true';
-        submitButton.disabled = 'true';   
+    if (13 == e.keyCode) {
+      carlot.resetCSS(lastCardSelected);
+      textBox.value = "";
+      textBox.disabled = 'true';
+      submitButton.disabled = 'true';   
     }
       //any key other than "enter" is text output into the description area
-      else {descriptionSelected.innerHTML = "Description: " + textBox.value;
+    else {descriptionSelected.innerHTML = "Description: " + textBox.value;
     }
-    };
+  };
 
   return carlot;
 })(Carlot || {});

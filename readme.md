@@ -2,8 +2,8 @@
 
 ## Project Notes
 
-Wrote an extra function cardUniform() to make every card in a row the same height as that row's tallest card.
-cardUniform() is also called after an edit to resize that row if necessary.
+Wrote an extra function cardUniform() to make every card in a row the same height as that row's tallest card. No matter how long each cards' description, all cards in that row are equal height.
+cardUniform() is called after an edit to resize that row if necessary.
 
 ## Project Instructions
 

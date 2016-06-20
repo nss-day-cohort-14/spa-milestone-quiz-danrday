@@ -61,16 +61,16 @@
     "price": "35999",
     "color": "salmon",
     "purchased": false,
-    "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
+    "description": "This is an immaculate 2006 Nissan Pathfinder with only 25000 miles on it. Leather seats, power everything."
   },
    {
     "make": "Nissan",
-    "model": "Pathfinder",
+    "model": "Hummer",
     "year": "2003",
     "price": "35999",
     "color": "chocolate",
     "purchased": true,
-    "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
+    "description": "This is an immaculate 2006 Nissan Hummer with only 25000 miles on it. Leather seats, power everything."
   },
   {
     "make": "Nissan",
