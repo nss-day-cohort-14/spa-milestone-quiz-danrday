@@ -2,10 +2,10 @@
 
 ## Project Notes
 
-I'm really curious about finding a good way to make every row's cards the same height.
+Wrote an extra function cardUniform() to make every card in a row the same height as that row's tallest card.
+cardUniform() is also called after an edit to resize that row if necessary.
 
-
-## Instructions
+## Project Instructions
 
 You operate a used car lot, and need to have an application where you can update the description and availability of each car in your inventory. You are going to using the Bootstrap grid to lay out your HTML structure.
 
