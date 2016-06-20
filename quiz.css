@@ -1,5 +1,4 @@
 
-
 #mainDisplay {
   clear:both;
   padding-top: 30px;
@@ -11,10 +10,8 @@
   width: 30%;
   margin: 20px;
   box-shadow: .25em .25em 20px 10px gold;
-  border-radius: 3px;
   font-weight: bold;
-
-
+  word-wrap: break-word
 }
 
 #textInput {
@@ -32,6 +29,10 @@
   background-color: lightsalmon;
   color: mediumvioletred;
   margin-left: 10px;
+}
+
+#submitButton:hover {
+  background-color: gold;
 }
 
 nav {
