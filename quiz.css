@@ -1,0 +1,49 @@
+.smallScreen {
+ font-size: 6em;
+}
+
+
+#mainDisplay {
+  clear:both;
+  padding-top: 30px;
+}
+
+.singleCard {
+  padding-top: 10px;
+  padding-botom: 10px;
+  width: 30%;
+  margin: 20px 10px;
+  box-shadow: .25em .25em 20px 10px gold;
+  font-weight: bold;
+  word-wrap: break-word
+}
+
+#textInput {
+  width: 40%;
+  display: inline;
+  border: 2px solid chartreuse;
+  background-color: orange;
+  color: blue;
+
+}
+
+#submitButton {
+  display: inline;
+  border: 3px solid salmon;
+  background-color: lightsalmon;
+  color: mediumvioletred;
+  margin-left: 10px;
+}
+
+#submitButton:hover {
+  background-color: gold;
+}
+
+body {
+  background-color: deeppink;
+}
+
+.row {
+  margin: auto;
+
+}

@@ -4,29 +4,81 @@
     "make": "Nissan",
     "model": "Rogue",
     "year": "2006",
-    "price": "8999",
+    "price": "89599",
     "color": "FireBrick",
     "purchased": false,
     "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
   },
-
+  {
+    "make": "Mitsubishi",
+    "model": "Eclipse",
+    "year": "2007",
+    "price": "49299",
+    "color": "yellow",
+    "purchased": true,
+    "description": "This is an immaculate 2006 Mitsubishi. Leather seats, power everything."
+  },
+  {
+    "make": "Chevy",
+    "model": "Truck",
+    "year": "2002",
+    "price": "63999",
+    "color": "greenyellow",
+    "purchased": false,
+    "description": "Truck for sale by owner. Chevy Truck, White, Model SC1, 4C, mileage 187 K. Used only as lawn care work truck."
+  },
+  {
+    "make": "Hyundai",
+    "model": "Sonata",
+    "year": "2001",
+    "price": "17999",
+    "color": "green",
+    "purchased": true,
+    "description": "Power brakes, no power steering. No AC."
+  },
   {
     "make": "Nissan",
-    "model": "Rogue",
-    "year": "2006",
-    "price": "8999",
-    "color": "FireBrick",
+    "model": "Altima",
+    "year": "2002",
+    "price": "26999",
+    "color": "purple",
+    "purchased": false,
+    "description": "Excellent Condition."
+  },
+  {
+    "make": "Nissan",
+    "model": "Pathfinder",
+    "year": "2003",
+    "price": "35999",
+    "color": "tomato",
     "purchased": false,
     "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
   },
-
+   {
+    "make": "Nissan",
+    "model": "Pathfinder",
+    "year": "2003",
+    "price": "35999",
+    "color": "salmon",
+    "purchased": false,
+    "description": "This is an immaculate 2006 Nissan Pathfinder with only 25000 miles on it. Leather seats, power everything."
+  },
+   {
+    "make": "Nissan",
+    "model": "Hummer",
+    "year": "2003",
+    "price": "35999",
+    "color": "chocolate",
+    "purchased": true,
+    "description": "This is an immaculate 2006 Nissan Hummer with only 25000 miles on it. Leather seats, power everything."
+  },
   {
     "make": "Nissan",
     "model": "Rogue",
-    "year": "2006",
-    "price": "8999",
-    "color": "FireBrick",
+    "year": "2004",
+    "price": "49499",
+    "color": "DarkSeaGreen",
     "purchased": false,
-    "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
+    "description": "Sunroof and badass shiny rims."
   }]
 }
